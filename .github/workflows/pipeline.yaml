@@ -30,8 +30,8 @@ jobs:
       - name: Build and Push Docker Image
         run: |
           docker build -t devop-app:latest .
-          docker tag devop-app:latest us.icr.io/<namespace>/devop-app:latest
-          docker push us.icr.io/<namespace>/devop-app:latest
+          docker tag devop-app:latest us.icr.io/devops-arf/devop-app:latest
+          docker push us.icr.io/devops-arf/devop-app:latest
 
       - name: Deploy to Kubernetes
         run: |

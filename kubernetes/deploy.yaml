@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: devop-app
-        image: us.icr.io/<your-namespace>/devop-app:latest 
+        image: us.icr.io/devops-arf/devop-app:latest 
         ports:
         - containerPort: 3000  
        
